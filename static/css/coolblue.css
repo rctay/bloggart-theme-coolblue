@@ -77,7 +77,7 @@ img {
 img.float-right {	margin: 5px 0px 10px 10px; }
 img.float-left { margin: 5px 10px 10px 0px; }
 
-code {
+code, pre {
   	margin: 3px 0;
   	padding: 20px;
   	text-align: left;
