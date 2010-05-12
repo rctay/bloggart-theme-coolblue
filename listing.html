@@ -2,11 +2,12 @@
 {% block title %}{{config.blog_name}}{% endblock %}
 {% block body %}
   {% for post in posts %}
+<div class="post">
+  <div class="right">
     <h2><a href="{{config.url_prefix}}{{post.path}}">{{post.title|escape}}</a></h2>
     <p class="post-info">
-      Posted by {{config.author_name}}
       {% if post.tags %}
-        | Filed under
+        Filed under
         {% for tag in post.tag_pairs %}
           <a href="{{config.url_prefix}}/tag/{{tag.1|escape}}">{{tag.0|escape}}</a>{% if not forloop.last %},{% endif %}
         {% endfor %}
@@ -21,6 +22,21 @@
       <span class="date">{{post.published|date:"d F, Y"}}</span>
     </p>
   {% endfor %}
+  </div><!-- right-->
+
+  <div class="left">
+	<p class="dateinfo">{{post.published|date:"N"|upper}}<span>{{post.published|date:"m"}}</span></p>
+
+	<div class="post-meta">
+		<h4>Post Info</h4>
+		<ul>
+			<li class="user"><a href="#">{{config.author_name}}</a></li>
+			<li class="time"><a href="#">{{post.published|date:"H:i"}}</a></li>
+			<li class="permalink"><a href="#">{{config.url_prefix}}{{post.path}}</a></li>
+		</ul>
+	</div>
+  </div><!-- left -->
+</div><!-- post -->
   {% if prev_page %}
     <a id="prev" href="{{config.url_prefix}}{{prev_page}}">Newer</a>
   {% endif %}
