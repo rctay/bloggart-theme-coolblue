@@ -20,7 +20,6 @@
         <a href="{{config.url_prefix}}{{post.path}}#disqus_thread" class="readmore">Comments</a>
       {% endif %}
     </p>
-  {% endfor %}
   </div><!-- right-->
 
   <div class="left">
@@ -36,6 +35,7 @@
 	</div>
   </div><!-- left -->
 </div><!-- post -->
+  {% endfor %}
   {% if prev_page %}
     <a id="prev" href="{{config.url_prefix}}{{prev_page}}">Newer</a>
   {% endif %}
