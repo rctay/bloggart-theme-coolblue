@@ -15,9 +15,9 @@
     </p>
     {{post.summary}}
     <p class="postmeta">
-      <a href="{{config.url_prefix}}{{post.path}}" class="readmore">Read more</a> |
-      {% if config.disqus_forum %}
-        <a href="{{config.url_prefix}}{{post.path}}#disqus_thread" class="readmore">Comments</a> |
+      <a href="{{config.url_prefix}}{{post.path}}" class="readmore">Read more</a>
+      {% if config.disqus_forum %} |
+        <a href="{{config.url_prefix}}{{post.path}}#disqus_thread" class="readmore">Comments</a>
       {% endif %}
     </p>
   {% endfor %}
