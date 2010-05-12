@@ -23,16 +23,7 @@
   </div><!-- right-->
 
   <div class="left">
-	<p class="dateinfo">{{post.published|date:"N"|upper}}<span>{{post.published|date:"m"}}</span></p>
-
-	<div class="post-meta">
-		<h4>Post Info</h4>
-		<ul>
-			<li class="user"><a href="#">{{config.author_name}}</a></li>
-			<li class="time"><a href="#">{{post.published|date:"H:i"}}</a></li>
-			<li class="permalink"><a href="#">{{config.url_prefix}}{{post.path}}</a></li>
-		</ul>
-	</div>
+{% include "post_meta.html" %}
   </div><!-- left -->
 </div><!-- post -->
   {% endfor %}
