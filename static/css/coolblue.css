@@ -122,8 +122,10 @@ th {
   	padding: .8em 1em;
 	background: #2C76A6;
   	border-color: #308ABA #308ABA #246F97 #308ABA;
-	color: #fff;
 	font-weight: bold;
+}
+th, th label {
+	color: #fff;
 }
 td {
 	border-color: #E9E9E9;
