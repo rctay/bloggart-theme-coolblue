@@ -16,7 +16,9 @@
   {% block head %}{% endblock %}
 </head>
 <body>
-	<div id="header-wrap"><div id="header" class="container_16">
+	<div id="header-wrap"><div id="header">
+		<a name="top"></a>
+
 		<h1 id="logo-text"><a href="{{config.url_prefix}}/" title="">{{config.blog_name}}</a></h1>
 		<p id="intro">{{config.slogan}}</p>
 		<div  id="nav">
@@ -25,24 +27,27 @@
         {% block menu %}{% endblock %}
 			</ul>
 		</div>
-		<div id="header-image"></div>
+
+		<p id="rss">
+			<a href="index.html">Grab the RSS feed</a>
+		</p>
     <form id="quick-search" action="{{config.url_prefix}}/search" method="get">
-      <p>
+      <fieldset class="search">
         <label for="q">Search:</label>
         <input type="hidden" name="cref" value="http://{{config.host}}{{config.url_prefix}}/cse.xml" />
         <input type="hidden" name="cof" value="FORID:11" />
         <input type="hidden" name="ie" value="UTF-8" />
         <input class="tbox" type="text" name="q" size="31" />
-        <input class="btn" type="image" name="sa" value="Search" src="{{config.url_prefix}}/static/{{config.theme}}/images/search.gif" alt="Search" />
-      </p>
+        <button class="btn" title="Search">Search</button>
+      </fieldset>
     </form>
     <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=quick-search&lang=en"></script>
-	</div></div>
-	<div id="content-outer"><div id="content-wrapper" class="container_16">
-		<div id="main" class="grid_12">
+	</div></div><!-- header-wrap -->
+	<div id="content-wrap" class="clear" ><div id="content">
+		<div id="main">
       {% block body %}{% endblock %}
 		</div>
-		<div id="left-columns" class="grid_4">
+		<div id="sidebar">
       {% for sidebar in config.sidebars %}
         <div class="sidemenu">
           <h3>{{sidebar.0}}</h3>
@@ -53,9 +58,8 @@
           </ul>
         </div>
       {% endfor %}
-		</div>
-	</div></div>
-	<div id="footer-wrapper" class="container_16">
+		</div><!-- sidebar -->
+	</div></div><!-- content-wrap -->
 		<div id="footer-bottom">
 			<p class="bottom-left">
 			&nbsp; &copy; {{config.author_name}} &nbsp; &nbsp;
@@ -67,8 +71,7 @@
 				<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> |
 		   	<a href="http://validator.w3.org/check/referer">XHTML</a>
 			</p>
-		</div>
-	</div>
+		</div><!-- footer-bottom -->
 {% if config.analytics_id and not devel %}
   <script type="text/javascript">
   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
