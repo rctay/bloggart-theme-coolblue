@@ -23,9 +23,12 @@ Usage
 
      $ git submodule add git://github.com/rctay/bloggart-theme-coolblue.git themes/coolblue
 
-   If you've merged in my `configurable defer feature`_, then this should read::
+   This theme tracks the `rc/master` branch in `my bloggart fork` very closely,
+   and the branches here corresponds to branches there. Therefore, if your
+   bloggart setup uses my branches, you should specify the branch to the
+   `git submodule add` command. For example::
 
-     $ git submodule add -b rc/defer-config git://github.com/rctay/bloggart-theme-coolblue.git themes/coolblue
+     $ git submodule add -b rc/master git://github.com/rctay/bloggart-theme-coolblue.git themes/coolblue
 
 #. Modify your ``config.py``::
 
@@ -47,3 +50,4 @@ Usage
    regenerate them for the coolblue theme to take effect.
 
 .. _`configurable defer feature`: http://github.com/rctay/bloggart/tree/rc/defer-config
+.. _`my bloggart fork`: http://github.com/rctay/bloggart
