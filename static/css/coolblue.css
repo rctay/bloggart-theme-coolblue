@@ -77,18 +77,24 @@ img {
 img.float-right {	margin: 5px 0px 10px 10px; }
 img.float-left { margin: 5px 10px 10px 0px; }
 
-code, pre {
+pre {
   	margin: 3px 0;
   	padding: 20px;
   	text-align: left;
   	display: block;
   	overflow: auto;
+}
+code {
+	padding: 0px 0.2em;
+}
+code, pre {
   	font: 500 1em/1.5em 'Lucida Console', 'Courier New', Monospace;
   	/* white-space: pre; */
-  	border: 1px solid #F0F0F0;
+	border: 1px solid #F0F0F0;
 	background: #F8F8F8;
 	color: #555;
 }
+
 acronym {
 	cursor: help;
   	border-bottom: 1px dotted #777;
@@ -138,7 +144,6 @@ form {
 	padding: 10px 25px 25px 25px;
     background: #F3F4F5;
     border: 1px solid #E2E4E7;
-	width: 477px;
 }
 form p {
 	border-bottom: 1px solid #E6E6E6;
