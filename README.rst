@@ -5,8 +5,9 @@ styleshout.com's coolblue template for bloggart
 Description
 -----------
 
-This is the `coolblue template`_ from `styleshout.com`_, modified for bloggart,
-based on a fork of the "default" template in `bloggart`_.
+This is the `coolblue template`_ from `styleshout.com`_, modified for bloggart.
+It relies on the "default" template in `bloggart`_ and overrides a few templates
+here and there.
 
 As the original coolblue template was distributed under `CC Attribution`_, this
 project should also fall under it too.
