@@ -24,7 +24,7 @@ Usage
 
      $ git submodule add git://github.com/rctay/bloggart-theme-coolblue.git themes/coolblue
 
-   This theme tracks the `rc/master` branch in `my bloggart fork` very closely,
+   This theme tracks the `rc/master`_ branch in `my bloggart fork`_ very closely,
    and the branches here corresponds to branches there. Therefore, if your
    bloggart setup uses my branches, you should specify the branch to the
    `git submodule add` command. For example::
@@ -50,5 +50,5 @@ Usage
 #. If you've already posted posts in your previous theme, you will have to
    regenerate them for the coolblue theme to take effect.
 
-.. _`configurable defer feature`: http://github.com/rctay/bloggart/tree/rc/defer-config
+.. _`rc/master`: http://github.com/rctay/bloggart/tree/rc/master
 .. _`my bloggart fork`: http://github.com/rctay/bloggart
