@@ -1,10 +1,10 @@
-<p class="dateinfo">{{post.published|date:"N"|upper}}<span>{{post.published|date:"d"}}</span></p>
+<p class="dateinfo">{{post.published_tz|date:"N"|upper}}<span>{{post.published_tz|date:"d"}}</span></p>
 
 <div class="post-meta">
 	<h4>Post Info</h4>
 	<ul>
 		<li class="user">{{config.author_name}}</li>
-		<li class="time">{{post.published|date:"H:i"}}</li>
+		<li class="time">{{post.published_tz|date:"H:i"}}</li>
 		<li class="permalink"><a href="{{config.url_prefix}}{{post.path}}">Permalink</a></li>
 	</ul>
 </div>
