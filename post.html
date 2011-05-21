@@ -20,8 +20,8 @@
   {% if next %}
     <a id="next" href="{{config.url_prefix}}{{next.path}}">Next Post</a>
   {% endif %}
-
-  {% if config.disqus_forum %}
+  
+  {% if config.disqus_forum and not is_admin %}
     <h3 id="comments">Comments</h3>
     <div id="disqus_thread"></div>
     {% if devel %}
