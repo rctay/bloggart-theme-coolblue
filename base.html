@@ -48,7 +48,7 @@
           <h3>{{sidebar.0}}</h3>
           <ul>
             {% for entry in sidebar.1 %}
-              <li>{{entry}}</li>
+              <li>{{entry|safe}}</li>
             {% endfor %}
           </ul>
         </div>
