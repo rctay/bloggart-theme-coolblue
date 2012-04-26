@@ -12,7 +12,7 @@
         {% endfor %}
       {% endif %}
     </p>
-    {{post.summary}}
+    {{post.summary|safe}}
     <p class="postmeta">
       <a href="{{config.url_prefix}}{{post.path}}" class="readmore">Read more</a> |
       {% if config.disqus_forum %}
