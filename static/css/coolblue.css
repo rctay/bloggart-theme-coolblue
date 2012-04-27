@@ -43,25 +43,11 @@ a:hover.more {
 h1, h2, h3, h4 {
 	font: bold 1em/1.5em 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, Sans-Serif;
 	color: #555;
-	margin: 20px 0 10px;
 }
-h1 {
-	font-size: 3.7em;
-	letter-spacing: -2px;
-	line-height: 1em;
-}
-h2 {
-	font-size: 2.8em;
-	border-bottom: 1px solid #CCC;
-}
-h3 {
-	font-size: 2.2em;
-	border-bottom: 1px solid #DDD;
-}
+h1 { font-size: 3.7em; letter-spacing: -2px; }
+h2 { font-size: 2.8em; }
+h3 { font-size: 2.2em; }
 h4 { font-size: 1.5em; }
-
-h1:first-child, h2:first-child, h3:first-child, h4:first-child { margin-top: 0; }
-h1 + p, h2 + p, h3 + p, h4 + p { margin-top: 0; }
 
 /* lists */
 ul, ol {
@@ -614,6 +600,23 @@ ul.subscribe-stuff li img {
 	overflow: hidden;
 	border-bottom: 1px solid #eee;
 }
+
+.post h1, .post h2, .post h3, .post h4 {
+	margin: 20px 0 10px;
+}
+.post h1 {
+	line-height: 1em;
+}
+.post h2 {
+	border-bottom: 1px solid #CCC;
+}
+.post h3 {
+	border-bottom: 1px solid #DDD;
+}
+
+.post h1:first-child, .post h2:first-child, .post h3:first-child, .post h4:first-child { margin-top: 0; }
+.post h1 + p, .post h2 + p, .post h3 + p, .post h4 + p { margin-top: 0; }
+
 .right {
 	width: 560px;
 	float: right;
