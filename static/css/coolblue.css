@@ -79,20 +79,22 @@ img.float-left { margin: 5px 10px 10px 0px; }
 
 pre {
 	margin: 3px 0;
-	padding: 20px;
-	text-align: left;
-	display: block;
+	padding: 6px 10px;
+	border: 1px solid #CCC;
 	overflow: auto;
 }
 code {
-	padding: 0px 0.2em;
+	margin: 0 2px;
+	padding: 0 5px;
+	white-space: nowrap;
+	border: 1px solid #EAEAEA;
 }
 code, pre {
 	font: 500 1em/1.5em 'Lucida Console', 'Courier New', Monospace;
 	/* white-space: pre; */
-	border: 1px solid #F0F0F0;
 	background: #F8F8F8;
-	color: #555;
+	border-radius: 3px;
+	color: #333;
 }
 
 acronym {
