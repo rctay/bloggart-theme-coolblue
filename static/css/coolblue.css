@@ -326,11 +326,9 @@ fieldset.search {
 
 /* content */
 #content-wrap {
-	clear: both;
 	margin: 0; padding: 0;
 	background: #fff;
 	width: 100%;
-	float: left;
 }
 #content {
 	width: 1000px;
