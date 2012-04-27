@@ -4,7 +4,7 @@
   {% for post in posts %}
 <div class="post">
   <div class="right">
-    <h2><a href="{{config.url_prefix}}{{post.path}}">{{post.title|escape}}</a></h2>
+    <h1><a href="{{config.url_prefix}}{{post.path}}">{{post.title|escape}}</a></h1>
     <p class="post-info">
       {% if post.tags %}
         Filed under
