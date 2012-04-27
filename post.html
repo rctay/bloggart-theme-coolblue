@@ -13,7 +13,7 @@
         {% endfor %}
       {% endif %}
     </p>
-  {{post.rendered}}
+  {{post.rendered|safe}}
   {% if prev %}
     <a id="prev" href="{{config.url_prefix}}{{prev.path}}">Previous Post</a>
   {% endif %}
