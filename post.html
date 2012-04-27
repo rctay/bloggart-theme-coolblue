@@ -5,9 +5,8 @@
   <div class="right">
   <h1>{{post.title|escape}}</h1>
     <p class="post-info">
-      Posted by {{config.author_name}}
       {% if post.tags %}
-        | Filed under
+        Filed under
         {% for tag in post.tag_pairs %}
           <a href="{{config.url_prefix}}/tag/{{tag.1|escape}}">{{tag.0|escape}}</a>{% if not forloop.last %},{% endif %}
         {% endfor %}
