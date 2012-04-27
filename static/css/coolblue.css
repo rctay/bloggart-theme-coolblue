@@ -350,8 +350,7 @@ fieldset.search {
 #sidebar {
 	width: 245px;
 	float: right;
-	margin: 0;
-	padding: 15px 0;
+	margin-top: 50px;
 	font-size: .95em;
 }
 
@@ -359,7 +358,6 @@ fieldset.search {
 #sidebar h3 {
 	font: bold 1.7em 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, Sans-Serif;
 	letter-spacing: .2px;
-	margin-left: 10px;
 	color: #333;
 }
 #sidebar h3, #sidebar p {
